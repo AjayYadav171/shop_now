@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clothing Collections | Fashion Store</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #fafafa;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #f093fb, #f5576c);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+
+    .collection-section {
+      padding: 50px 5%;
+      text-align: center;
+    }
+
+    .collection-section h2 {
+      font-size: 2em;
+      color: #333;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .collections {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      font-size: 1.4em;
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    .card-content p {
+      font-size: 0.95em;
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: linear-gradient(135deg, #f093fb, #f5576c);
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: linear-gradient(135deg, #f5576c, #f093fb);
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+      margin-top: 50px;
+    }
+
+    footer p {
+      font-size: 0.9em;
+      opacity: 0.8;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Fashion Hub Collections</h1>
+    <p>Explore our exclusive seasonal and style-based clothing collections</p>
+  </header>
+
+  <section class="collection-section">
+    <h2>Our Collections</h2>
+
+    <div class="collections">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" alt="Summer Collection">
+        <div class="card-content">
+          <h3>Summer Collection ☀️</h3>
+          <p>Light, breathable outfits made with cotton and linen fabrics in pastel colors for comfort and style.</p>
+          <a href="#" class="btn">Shop Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f" alt="Winter Collection">
+        <div class="card-content">
+          <h3>Winter Collection ❄️</h3>
+          <p>Cozy sweaters, jackets, and hoodies designed to keep you warm while looking stylish all season.</p>
+          <a href="#" class="btn">Shop Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1596464716121-9f24b3f57a1a" alt="Festive Collection">
+        <div class="card-content">
+          <h3>Festive & Ethnic 🎉</h3>
+          <p>Elegant sarees, kurtas, and lehengas crafted from silk and georgette for every celebration.</p>
+          <a href="#" class="btn">Shop Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1521335629791-ce4aec67dd53" alt="Casual Collection">
+        <div class="card-content">
+          <h3>Casual Wear 👕</h3>
+          <p>Everyday comfort with trendy T-shirts, jeans, and tops in relaxed fits and neutral shades.</p>
+          <a href="#" class="btn">Shop Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb" alt="Formal Collection">
+        <div class="card-content">
+          <h3>Formal & Office 👔</h3>
+          <p>Sharp, professional outfits including shirts, trousers, and blazers for a smart office look.</p>
+          <a href="#" class="btn">Shop Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f" alt="Party Collection">
+        <div class="card-content">
+          <h3>Party & Evening ✨</h3>
+          <p>Chic gowns, shimmer tops, and tuxedos made with premium fabrics for glamorous evenings.</p>
+          <a href="#" class="btn">Shop Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1599940824399-b87987ceb72b" alt="Sports Collection">
+        <div class="card-content">
+          <h3>Sports & Activewear 🏋️</h3>
+          <p>Flexible, sweat-resistant gym and yoga wear made from breathable stretchable fabrics.</p>
+          <a href="#" class="btn">Shop Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4c" alt="Sustainable Collection">
+        <div class="card-content">
+          <h3>Sustainable Fashion 🌱</h3>
+          <p>Eco-friendly designs made from organic cotton, bamboo, and recycled fabrics.</p>
+          <a href="#" class="btn">Shop Now</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Fashion Hub | Designed with ❤️ by Your Brand</p>
+  </footer>
+
+</body>
+</html>
